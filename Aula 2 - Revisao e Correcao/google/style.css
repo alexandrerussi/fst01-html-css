@@ -37,6 +37,7 @@
 }
 
 .google form button:hover {
-    background-color: rgb(47, 47, 47);
+    border: 1px solid #2f2f2f;
+    background-color: #2f2f2f;
     color: white;
 }
