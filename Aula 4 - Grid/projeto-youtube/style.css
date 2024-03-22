@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Arial;
+}
+
+.video-box {
+    width: 350px; /* ISSO VAI MUDAR!!!! */
+}
+
+.thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+main {
+    padding: 100px 30px 0 200px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 38px 1fr 12px;
+    column-gap: 10px;
+    margin-top: 8px;
+}
+
+.channel-img img {
+    width: 100%;
+    border-radius: 50%;
+    height: 38px;
+    object-fit: cover;
+}
+
+.content h2 {
+    font-size: 1rem;
+    margin: 5px 0 8px 0;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 3px;
+}
+
+/* PSEUDOELEMENTO */
+.time::before {
+    content: "•";
+    margin: 0 4px;
+} 
+
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+}
